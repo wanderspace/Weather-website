@@ -60,19 +60,14 @@ app.get('/weather',(req,res)=>{
             }
 
             res.send({
-                forecastData,
                 location,
+                forecastData,
                 address:req.query.address
             })
         })
         
     })
 
-    // res.send({
-    //     forecast: 'Today temperature is 34 degrees out there!',
-    //     location:'Mumbai',
-    //     address: req.query.address
-    // })
 })
 
 app.get('/products',(req,res)=>{
